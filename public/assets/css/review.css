@@ -1,0 +1,27 @@
+.review-post {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: darkolivegreen;
+    font-size: 2vh;
+}
+
+.review-timestamp {
+    color: gray;
+}
+
+.review-content {
+    margin-top: 10px;
+    color: burlywood;
+}

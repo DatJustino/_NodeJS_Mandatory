@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/tabs.css">
+  <link rel="stylesheet" href="../assets/css/home.css">
+  <link rel="stylesheet" href="../assets/css/modded-dark.css">
+  <title>Javascript</title>
+</head>
+<nav>
+  <a href="/" title="link to main page"><img id="logo" src="../assets/imgs/logo.png" alt="NodeJS logo"></a>
+  <a href="/jspage" title="Javascript lessons reviewed - notes for exam!">JavaScript</a>
+  <a href="/restapi" title="RESTapi lessons reviewed - notes for exam!">/RESTapi</a>
+  <a href="/contact" title="Contact/reviews - notes for exam!">/Contact</a>
+</nav>
+
+<body onload="openWeek(event, 'week1')">
+  <div class="tab">
+    <button class="tablinks" onclick="openWeek(event, 'week1')">Week-1</button>
+    <button class="tablinks" onclick="openWeek(event, 'week2')">Week-2</button>
+    <button class="tablinks" onclick="openWeek(event, 'week3')">Week-3</button>
+    <button class="tablinks" onclick="openWeek(event, 'week4')">Week-4</button>
+    <button class="tablinks" onclick="openWeek(event, 'week5')">Week-5</button>
+    <button class="tablinks" onclick="openWeek(event, 'week6')">Week-6</button>
+    <button class="tablinks" onclick="openWeek(event, 'week7')">Week-7</button>
+  </div>
+
+  <!-- Tab content -->
+  <div id="week1" class="tabcontent">
+    <h3>Intro into NodeJS understanding foundation of Javascript</h3>
+    <p>Our first week of NodeJS we had brushed up on our Javascript skills, we learned the basics of do's and dont's
+      using JS when now we were learning of NodeJS </p>
+    <p>The teacher here gave the students a very important notice on the importance of the classes, and what was
+      expected of the students regarding this class.</p>
+    <p>Alot of the talk was about conventions and expentance of knowledge of conventions such as naming and clean code.
+    </p>
+    <p>REST Api Conventions are also a necessity, as the products become larger and larger, its important to understand
+      where is what.</p>
+    <p>The expentance here was more inclined to the knowledge of that the GET ALL function lies on top of everything but
+      here is a small summary of the contents:</p>
+    <ul>
+      <li>GET all - The function to fetch all elements</li>
+      <li>GET one - the function to fetch a single element using an ID</li>
+      <li>POST - send request creating a new element</li>
+      <li>PATCH - patching parts of a single element (we use this so we dont, flood the internet and server with
+        unecessary bandwidth), using an ID</li>
+      <li>PUT - patch/update the entirety of a single element, basically recreating it from scratch, using an id.</li>
+      <li>DELETE - Deletes a single element using an ID</li>
+    </ul>
+  </div>
+  <div id="week2" class="tabcontent">
+    <h3>Scope and Start NodeJS!</h3>
+    <p>The Teacher spoke and brushed the students of how scoping works, being in global scope, function scope, block
+      scope and the importance of using functions </p>
+    <p>We were introduced to ESLint we continued to talk about basic JS, and how to propperly use it, we then went into
+      creating objects, arrays and functions.</p>
+    <p>We also learned what is JSON and understood its significance and simplicity, we were also shown XML for
+      reference. </p>
+    <p>We worked abit with express and started working on our first NodeJS interaction and understanding further the use
+      and
+      power of the language.</p>
+    <p>We concretely we made a port connection with a callback function (in several different ways) which allows us to
+      handle errors.</p>
+    <p>additionally we worked with setting up our own package.json so that we can install necessary dependencies using
+      npm</p>
+    <p>Which is also another skill we learned how to propperly look and find the documentation for npm</p>
+    </p>
+    <p>And obvisouly as working with npm we also learned about node_modules, what they are and about how express is a
+      lightweight language.</p>
+  </div>
+  <div id="week3" class="tabcontent">
+    <h3>CRUD REST Api, networking, loops and Nodemon!</h3>
+    <p>We continued with the Mountains API now implementing POST requests, serving html and working with URLs.</p>
+    <p>The teacher also dissect the URL teaching us about the protocol, subdomain, domain name, top-level-domain, path
+      and possibly a query.</p>
+    <p>we worked for quite some time on perfecting our mastery of loops and how to create the right loops so we avoid
+      errors.</p>
+    <p>we also trained to work lists using maps, reduce and filters.</p>
+    <p>additionally learning and understood the need for body parsing</p>
+  </div>
+  <div id="week4" class="tabcontent">
+    <h3>Time to Deploy!</h3>
+    <p>I wasnt in school that day saddly, but I did read on the subject and sucesffully launched a static page on Vercel
+      using the help provided by the teacher.</p>
+    <p>We had an assignment to learn how to work with date, getting different date types which was the topic of my
+      vercel site: </p>
+    <a href="https://node-js-deploy2.vercel.app/" target="_blank" rel="noopener noreferrer"
+      title="Link to my static site on vercel using node and express">Vercel shows when new years is at</a></p>
+    <p>My colleagues told me also they implemented the last parts of the CRUDable Mountain API we were creating since
+      the 2nd week.</p>
+  </div>
+  <div id="week5" class="tabcontent">
+    <h3>XSS, Import and Export</h3>
+    <p>The lesson of the week was in the different methods on importing and exporting modules in NodeJS, we learned the
+      legacy method in case we were going to take care of such a system</p>
+    <div class="pre-container">
+      <pre>We were also introduced to the dangers of cross site scripting attacks, that plagues the internet, and learned
+      that we can sanitize it rather simply by changing html elements that could be used for scripting using html to change
+      the following:
+     from | to 
+      &   | & amp;
+      <   | & lt;
+      >   | & gt;
+      "   | & quot;
+      '   | & #x27;
+    But without the space in between the ampersand, doing abit of digging ive also learned that we have options like
+     using sanitation modules for NodeJS. this is not fail proof but definitely helps alot.</pre>
+    </div>
+  </div>
+  <div id="week6" class="tabcontent">
+    <h3>Serverside vs Clientside redirects and fetching</h3>
+    <p>In this week we learned some differences on how to serve websites and redirect whether we do it on the client
+      side</p>
+    <p>or to do it in the Serverside, the same goes about fetching, learning the differences in what we wish of the
+      website.</p>
+    <p>One could argue about the major difference is whether you are creating an internal website for your workers, or
+      its a </p>
+    <p>website made for a business that wishes to be seen online by SEO robots. there are also some difference in
+      loadtimes.</p>
+    <p>We were also taught how to structure our folders when creating fullstack applications.</p>
+  </div>
+  <div id="week7" class="tabcontent">
+    <h3>SSR, Env-Var, Filesystem read/write</h3>
+    <p>The lesson was about SSR and CSR, learning about Env-Var, where and when its needed
+      (guessing especifically for DB connections and other sensitive info?),</p>
+    <p>I was sadly not there for the lessons but read up on it online and got some intel from colleagues</p>
+    <p>and how to implement filesystem files and read and write to them.</p>
+    <p>we were also instructed to learn basic Svelte through their learning webpage.</p>
+  </div>
+
+  <footer>
+    <p id="copyright"></p>
+    <a href="/contact">Contact</a>
+  </footer>
+  <script src="/assets/js/footer.js"></script>
+  <script src="./jspage.js"></script>
+</body>
+
+</html>

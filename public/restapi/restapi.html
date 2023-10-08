@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/item.css">
+    <link rel="stylesheet" href="../assets/css/modded-dark.css">
+
+    <title>Random init LEarning!!</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/" title="link to main page"><img id="logo" src="../assets/imgs/logo.png" alt="NodeJS logo"></a>
+        <a href="/jspage" title="Javascript lessons reviewed - notes for exam!">JavaScript</a>
+        <a href="/restapi" title="RESTapi lessons reviewed - notes for exam!">/RESTapi</a>
+        <a href="/contact" title="Contact/reviews - notes for exam!">/Contact</a>
+    </nav>
+
+    <main>
+        <h1>Skill showcase of REST api</h1>
+
+        <h3>Showcasing REST api</h3>
+        <p>So its important for us to showcase the ABC of a the building blocks of a database.</p>
+        <p>In this page we will talk and write abit about the different functions of get/post/patch/put/delete AKA CRUD</p>
+        <p>CRUD stands for create, read, update and delete, and CRUD makes the world go round.</p>
+        <p>Here in the site we will give you up here the ability to create an item, and we will then try and make it fully CRUDable.</p>
+
+        <form id="createItem">
+            <input type="text" id="itemName" placeholder="Name your item!" required maxlength="30">
+            <textarea id="itemDescription" placeholder="Describe your item!" required maxlength="254"></textarea>
+            <input type="text" id="itemPrice" placeholder="Set a price on your item!" required maxlength="9">
+            <button type="submit">Submit</button>
+        </form>
+
+
+        <div id="itemContainer"></div>
+
+    </main>
+
+    <footer>
+        <p id="copyright"></p>
+        <a href="/contact">Contact - CLICK HERE... Its !important.</a>
+    </footer>
+    <script src="/assets/js/footer.js"></script>
+    <script type="module" src="./restapi.js"></script>
+</body>
+
+</html>
